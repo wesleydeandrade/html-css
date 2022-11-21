@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body{
+    font: normal 16px arial;
+    background-image: linear-gradient(to left,#9FC131,#dbda7afd );
+}
+
+h1{
+    color:#005C53;
+    background-color: rgba(240, 255, 255, 0.541);
+    padding:3px;
+    border-radius: 6px; 
+    border: 1px solid black;
+}
+#principal{
+    color:#bbecc1;
+    background-color: rgba(16, 90, 50, 0.541);
+    padding:3px;
+    border-radius: 6px;
+}
+p{
+    text-indent: 16px;
+}
+
+.basico{
+    color:rgb(197, 197, 32);
+    background-color: rgba(240, 255, 255, 0.281);
+    padding:3px;
+    border-radius: 6px; 
+}
+.basico:hover{
+    text-decoration: underline;
+}
+.avancado{
+    color:#9b2222;
+    background-color: rgba(240, 255, 255, 0.281);
+    padding:3px;
+    border-radius: 6px;
+    
+}
+.avancado:hover{
+    text-decoration: underline;
+}

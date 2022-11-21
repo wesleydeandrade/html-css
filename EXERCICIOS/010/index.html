@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir essa imagem em vários dispositivos ou aumente e diminua a janela do navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="imagem Dinamica">
+    </picture>
+    <h1>Colocando audio</h1>
+    <P>vamos aprender a reproduzir audios</P>
+    <audio preload="metadata" autoplay controls loop> 
+        <source src="midia/In Memory of Jean Talon - The Mini Vandals.mp3" type="audio/mpeg">
+        <p>infelizmente seu nevagador nao reproduz <a href="midia/In Memory of Jean Talon - The Mini Vandals.mp3"> Clique aqui para baixar o audio</a></p>
+    </audio>
+</body>
+</html>
