@@ -25,13 +25,11 @@ header h1{
 menu li{
     display:inline-block;
     margin-left: 4px;
-    padding: 8px;
+    padding: 5px;
     color: white;
     background-color: rgb(77, 76, 76);
-    border-color: black;
-    border-style: solid;
+    border: 3px solid black;
     border-radius: 10px;
-    border-spacing: 1px;
 }
 menu ul{
     list-style-type: none;
