@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table>
+          <tr>
+            <td>Nome:</td>
+            <td><input type="text" name="name" required></td>
+          </tr>
+          <tr>
+            <td>Idade:</td>
+            <td>
+              <input type="radio" name="gender" value="male" required> Masculino
+              <input type="radio" name="gender" value="female" required> Feminino
+            </td>
+          </tr>
+          <tr>
+            <td>Endereço:</td>
+            <td><input type="text" name="address" required></td>
+          </tr>
+          <tr>
+            <td>Telefone:</td>
+            <td><input type="text" name="telefone" pattern="[0-9]{11}" placeholder="DDD+telefone" required></td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" required></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Enviar"></td>
+          </tr>
+        </table>
+      </form>
+     
+</body>
+</html>
