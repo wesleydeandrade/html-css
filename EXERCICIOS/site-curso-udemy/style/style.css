@@ -1,0 +1,33 @@
+
+:root{
+    --primary-color: #03031D;
+    --white: white;
+    --gap:3rem;
+    --light-grey: #eeee;
+}
+
+.intro-content{
+    position: relative;
+    top: -15rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: stretch;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content h2{
+    font-size: 5.9rem;
+    margin-bottom: 5rem;
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
