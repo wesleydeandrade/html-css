@@ -24,3 +24,9 @@ p{
 h3{
 font-size: 4rem;
 }
+
+h3::first-letter{
+    font-size: 7rem;
+    font-weight: bold;
+    font-style: oblique;
+}
