@@ -4,6 +4,7 @@
     left: 0;
     right: 0;
     width: 100%;
+    z-index:1 ;
     border-bottom: var(--light-grey);
 }
 
@@ -21,6 +22,7 @@
 
 .menu ul{
     display: flex;
+    color: var(--primary-color);
 }
 
 .menu ul li a{
