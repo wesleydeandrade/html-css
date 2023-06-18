@@ -6,11 +6,13 @@
     width: 100%;
     z-index:1 ;
     border-bottom: var(--light-grey);
+    color: black;
 }
 
 .menu h1{
     font-size: 2.1rem;
-    color: var(--primary-color);
+    color: black;
+    font-weight: bold;
 }
 .menu-content{
     display: flex;
@@ -22,12 +24,12 @@
 
 .menu ul{
     display: flex;
-    color: var(--primary-color);
+    
 }
 
 .menu ul li a{
     display: block;
-    color: var(--primary-color);
+    
     padding: 2rem;
     font-size: 1.8 rem;
     position: relative;

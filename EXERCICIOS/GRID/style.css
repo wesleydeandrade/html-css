@@ -1,4 +1,4 @@
-/*
+
 
 .container{
     background-color: #333;
@@ -16,7 +16,7 @@
     padding: 10px;
     border: 1px solid blue;
 }
-*/
+
 
 /* Template area*/
 
@@ -84,7 +84,7 @@
     */
 
 /* ITENS */
-.container{
+/* .container{
     background-color: #333;
     border: 5px solid red;
     padding: 15px;
@@ -127,4 +127,4 @@
 
 #item-6{
     align-self: flex-end;
-}
+} */

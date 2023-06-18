@@ -10,6 +10,7 @@
 .white-bg{
     
     background: white;
+    color: black;
 }
 
 .main-content {
@@ -24,4 +25,5 @@
 
 .menu-spacing{
     height: 65px;
+    
 }
