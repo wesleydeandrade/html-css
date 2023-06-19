@@ -48,44 +48,45 @@
 }
 
 .work{
-    padding-top: 20rem;
-    height: 90vh;
-    display: grid;
-    grid-template-areas: 
-    'top top top'
-    'first great best'
-    'fist great best';
-    gap: 6rem;
-    counter-reset: grid-counter;
-
+    padding-top: 25rem;
+    
+    
 }
-
- 
-
-.top-content{
-    grid-area: top;
- 
-}
-
-.top-content h2{
+.work h2{
     font-size: 5.9rem;
-    padding-bottom: ;
+    
+    
+    
+}
+
+.grid-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10rem;
+    padding-top: 5rem;
+}
+
+.gallery{
 
 }
 
-.top-content p{
-    padding-bottom: -10rem;
+.gallery h2{
+    font-size: 5.9rem;
+    padding-top: 5rem;
 }
 
-.fist{
-    grid-area: first;
+.gallery-img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
 }
 
-.great{
-    grid-area: first;
+.gallery-img img{
+    max-width: 100%;
+    height: auto;
+    padding-top: 5rem;
+    
 }
-.best{
-    grid-area: first;
-}
-
-
