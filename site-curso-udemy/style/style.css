@@ -121,6 +121,61 @@
 
 /* SEÇÃO FORMULÁRIO */
 
+.contact-form{
+    grid-column: span 2;
+   
+    
+}
 
-  
+.form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
 
+.form-grup{
+    min-width: 40rem;
+    flex: 1 1 auto;
+}
+
+.form-grup label{
+    display: block;
+}
+
+.form-grup input,
+.form-grup textarea{
+    border: none;
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.form-grup button{
+    border: 0.2rem solid var(--white);
+    background: none;
+    color: white;
+    padding: 2rem 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-grup button:hover{
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.form-grup::placeholder{
+    color: rgba(0, 0, 0, 0.281);
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer a{
+    color: #03031D;
+}
