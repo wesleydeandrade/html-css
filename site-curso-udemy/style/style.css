@@ -6,14 +6,14 @@
     --light-grey: #eeee;
 }
 
+/* SEÇÃO INTRO */
 .intro-content{
     position: relative;
     top: 1.5rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    align-items: stretch;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img {
@@ -32,6 +32,8 @@
     height: auto;
 }
 
+/* SEÇÃO TOP */
+
 .top-3{
     max-width: 64rem;
     display: flex;
@@ -47,16 +49,15 @@
     margin-bottom: 5rem;
 }
 
+/* SEÇÃO WORK */
 .work{
-    padding-top: 25rem;
+    padding-top: 15rem;
     
     
 }
 .work h2{
     font-size: 5.9rem;
-    
-    
-    
+          
 }
 
 .grid-top{
@@ -66,10 +67,7 @@
     padding-top: 5rem;
 }
 
-.gallery{
-
-}
-
+/* SEÇÃO GALLERY */
 .gallery h2{
     font-size: 5.9rem;
     padding-top: 5rem;
@@ -90,3 +88,39 @@
     padding-top: 5rem;
     
 }
+
+.img1{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.img1:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));   
+}
+
+.img2{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.img2:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));   
+}
+
+.img3{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.img3:hover{
+   -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));   
+}
+
+/* SEÇÃO FORMULÁRIO */
+
+
+  
+
