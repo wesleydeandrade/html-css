@@ -121,123 +121,192 @@
 
 /* SEÇÃO FORMULÁRIO */
 
-.contact-form{
+.contact-form {
     grid-column: span 2;
-   
-    
-}
-
-.form-grid{
+  }
+  
+  .contact-form .form-grid {
     border: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--gap);
-}
-
-.form-grup{
-    min-width: 40rem;
-    flex: 1 1 auto;
-}
-
-.form-grup label{
+  }
+  
+  .form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem; 
+    margin-bottom: 3rem;
+  }
+  
+  .form-group {
+    flex: 1 1 800px;
+  }
+  
+  .form-group label {
     display: block;
-}
-
-.form-grup input,
-.form-grup textarea{
+    margin-bottom: 1rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
     border: none;
     background: var(--white);
     padding: 1.5rem 2rem;
     width: 100%;
-    font-size: 2rem;
-}
-
-.form-grup button{
-    border: 0.2rem solid var(--white);
+    font-size: 3rem;
+    outline: none;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    box-shadow: 0 0 10px 2px var(--secondary-color);
+  }
+  
+  .form-group button {
+    border: 0.5rem solid var(--white);
     background: none;
-    color: white;
-    padding: 2rem 1.5rem;
-    font-size: 2rem;
+    color: var(--white);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
-}
-
-.form-grup button:hover{
+  }
+  
+  .form-group button:hover {
     background: var(--white);
     color: var(--primary-color);
-}
+  }
+  
+  .form-group ::placeholder {
+    color: var(--light-gray-color);
+  }
 
-.form-grup::placeholder{
-    color: rgba(0, 0, 0, 0.281);
-}
-
-.footer{
+  .footer {
     text-align: center;
-}
-
-.footer a{
-    color: #03031D;
-}
-
-@media (max-width: 800px){
-    .intro-content, .grid-top{
-        grid-template-columns: 1fr;
-        
+    font-size: 1.6rem;
+  }
+  
+  .footer a {
+    color: var(--primary-color);
+  }
+  
+  .heart {
+    color: var(--secondary-color);
+  }
+  
+  .footer p {
+    margin: 0;
+    padding: 3rem;
+  }
+  
+  .close-menu {
+    display: none;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
+  }
+  
+  @media (max-width: 800px) {
+    .intro-content, .grid, .grid-top {
+      grid-template-columns: 1fr;
     }
-    .top-3, .form-grid{
-        
-        display: block;
-        height: auto;
-        width: auto;
+  
+    .gallery-img {
+      width: 100%;
+      max-width: 100%;
+      max-height: 100%; 
     }
-
-    .menu{
-        bottom: 0;
-        text-align: center;
-
+  
+    .gallery-img img {
+      width: 100%;
     }
-
-    .menu-content, .menu-content ul{
-        flex-direction: column;
-        justify-content: center;
+  
+    .grid-one-content {
+      display: block;
     }
-
-    .menu-content{
-        height: 100vh;
-
+  
+    .menu {
+      bottom: 0;
+      text-align: center;
     }
-
-    .menu{
-        display: none;
+  
+    .menu-content, .menu-content ul {
+      flex-direction: column;
+      justify-content: center;
     }
-    .close-menu{
-        position: fixed;
-        z-index: 2;
-        top: 0;
-        left: 0;
-
+  
+    .menu-content {
+      height: 100vh;
     }
-    .close-menu-label::after{
-        content: '≡';
-        position: fixed;
-        z-index: 2;
-        top: 2rem;
-        right: 2rem;
-        background: var(--primary-color);
-        color: var(--light-grey);
-        font-size: 3rem;
-        line-height: 3rem;
-        width: 3rem;
-        height: 3rem;
-        text-align: center;
-        padding: 0.5em;
-        
-
-
+  
+    .menu {
+      display: none;
     }
-
-
-
-
-}
+  
+    .close-menu-label::after {
+      content: '☰';
+      position: fixed;
+      z-index: 2;
+      top: 2rem;
+      right: 2rem;
+      background: var(--primary-color);
+      color: var(--white-color);
+      font-size: 3rem;
+      line-height: 3rem;
+      width: 3rem;
+      height: 3rem;
+      text-align: center;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+  
+    .close-menu:checked~.menu {
+      display: block;
+    }
+  
+    .close-menu:checked~.close-menu-label::after {
+      content: '×';
+    }
+  
+    .menu-spacing {
+      display: none;
+    }
+  
+    h1 {
+      font-size: 4rem;
+    }
+  
+    h2 {
+      font-size: 3.6rem;
+    }
+  
+    h3 {
+      font-size: 3.4rem;
+    }
+  
+    h4 {
+      font-size: 3.2rem;
+    }
+  
+    h5 {
+      font-size: 3rem;
+    }
+  
+    h6 {
+      font-size: 2.8rem;
+    }
+  }
