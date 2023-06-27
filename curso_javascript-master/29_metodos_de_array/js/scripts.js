@@ -1,26 +1,26 @@
-// length
+// length fala quantos elementos tem
 var arr = [1,2,3,4,5];
 
 console.log(arr.length);
 
-// push
+// push adicona no fim do array
 arr.push(6);
 arr.push('Qualquer coisa');
 
 console.log(arr);
 
-// pop
+// pop remove no fim do array
 arr.pop();
 
 console.log(arr);
 
-// unshift
+// unshift adiocna no começo do array
 arr.unshift(0);
 arr.unshift('teste');
 
 console.log(arr);
 
-// shift
+// shift remove do começo
 arr.shift();
 
 console.log(arr);
